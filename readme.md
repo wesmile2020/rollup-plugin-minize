@@ -2,11 +2,11 @@
 
 a rollup plugin for minize javascript
 
-# options 
-- sourceMap: boolean; generate sourceMap
+# options
+https://github.com/mishoo/UglifyJS#minify-options
 
 ```javascript
-const minize = require('rollup-plugin-minize');
+const { minize } = require('rollup-plugin-minize');
 
 module.exports = {
     plugins: [
