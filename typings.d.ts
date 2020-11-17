@@ -4,4 +4,7 @@ interface Options {
     sourceMap?: boolean;
 }
 
-export default function(opts: Options): Plugin;
+function minize(opts: Options): Plugin;
+
+export { minize };
+export default minize;
