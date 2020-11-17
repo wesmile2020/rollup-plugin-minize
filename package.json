@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-minize",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "a rollup plugin for minize javascript",
   "main": "dist/index.js",
   "types": "typings.d.ts",
