@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-minize",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "a rollup plugin for minize javascript",
   "main": "dist/index.js",
   "types": "typings.d.ts",
@@ -22,7 +22,7 @@
     "rollup": "^2.33.2"
   },
   "dependencies": {
-    "uglify-js": "^3.10.1"
+    "uglify-js": "^3.11.6"
   },
   "devDependencies": {
     "@types/uglify-js": "^3.11.1"
