@@ -1,16 +1,16 @@
-import uglify, { MinifyOptions } from 'uglify-js';
+import terser from 'terser';
 import rollup from 'rollup';
 
-function minize(options: MinifyOptions): rollup.Plugin {
+function minize(options: terser.MinifyOptions): rollup.Plugin {
     return {
         name: 'rollup-plugin-minize',
 
-        renderChunk(code) {
-            const result = uglify.minify(code, options);
-            if (result.error) {
-                throw result.error;
-            }
-            return result.code;
+        async renderChunk(code) {
+            const result = await terser.minify(code, options);
+            return {
+                code: result.code || '',
+                map: result.map
+            };
         }
     }
 }

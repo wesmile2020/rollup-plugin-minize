@@ -1,10 +1,7 @@
 import { Plugin } from 'rollup';
+import { MinifyOptions } from 'terser';
 
-interface Options {
-    sourceMap?: boolean;
-}
-
-function minize(opts: Options): Plugin;
+declare function minize(opts: MinifyOptions): Plugin;
 
 export { minize };
 export default minize;

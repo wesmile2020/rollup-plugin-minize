@@ -3,8 +3,10 @@
   "version": "1.6.0",
   "description": "a rollup plugin for minize javascript",
   "main": "dist/index.js",
-  "types": "typings.d.ts",
-  "scripts": {},
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wesmile2020/rollup-plugin-minize.git"
@@ -22,9 +24,6 @@
     "rollup": "^2.33.2"
   },
   "dependencies": {
-    "uglify-js": "^3.11.6"
-  },
-  "devDependencies": {
-    "@types/uglify-js": "^3.11.1"
+    "terser": "^5.10.0"
   }
 }
